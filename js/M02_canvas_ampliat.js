@@ -9,7 +9,7 @@
  * 19.01.2017
  * - programa que mostra com es pot treballar amb l'API canvas
  *
- * NOTES
+ * NOTES .. 
  * ORIGEN
  * Desenvolupament en entorn client. Escola del clot
  */
