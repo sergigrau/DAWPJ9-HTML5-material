@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<title>DAW2</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="sergi.grau@fje.edu" />
+	<link rel="stylesheet" type="text/css" href="css/estils.css">
+	<script type="text/javascript" src="js/M10_webworkers.js"></script>
+</head>
+
+<body>
+	<h1> Web Workers API </h1>
+	<p id="status">
+		El teu navegador no suporta HTML5 Web Workers.
+	</p>
+	<button id="inici" disabled>
+		Efecte
+	</button>
+	<button id="atura" disabled>
+		atura Workers
+	</button>
+	<button onclick="document.location = document.location;">
+		Recarregar
+	</button>
+	<label for="comptador">Nombre de Workers</label>
+	<select id="comptador">
+		<option>1</option>
+		<option selected>2</option>
+		<option>4</option>
+		<option>8</option>
+		<option>16</option>
+	</select>
+	<div id="contenidor"></div>
+	<div id="sortida"></div>
+
+</body>
+
+</html>

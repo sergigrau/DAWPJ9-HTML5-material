@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#fixters offline
+
+CACHE:
+M01_semantic.html
+M03_audio.html
+css/estils.css
+
+
+NETWORK:
+#fitxers online
+M04_video.html
+
+FALLBACK:
+M05_geolocalitzacio.html M01_semantic.html
