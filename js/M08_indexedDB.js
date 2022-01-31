@@ -14,7 +14,7 @@
  * Desenvolupament en entorn client. Escola del clot
  */
 
-const DB_VERSION = 19;
+const DB_VERSION = 21;
 const dadesClients = [{
     ssn: "123",
     nom: "Sergi",
@@ -122,13 +122,13 @@ peticioObertura.onupgradeneeded = function (event) {
     // Crear un índex per buscar clients pel seu nom. Podem tenir duplicats
     // Així que no podem utilitzar un índex únic.
     magatzemObjsClients.createIndex("nom", "nom", {
-        únic: false
+        unique: false
     });
 
     // Crear un índex per buscar clients per correu electrònic. Volem assegurar-nos que
     // No hi ha dos clients tenen el mateix correu electrònic, per tal d'utilitzar un índex únic.
     magatzemObjsClients.createIndex("email", "email", {
-        únic: true
+        unique: true
     });
 
     // Utilitzeu la transacció OnComplete per assegurar-se que la creació és ObjectStore
