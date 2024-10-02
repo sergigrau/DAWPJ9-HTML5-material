@@ -4,14 +4,19 @@ window.onload = function () {
         let context = canvas.getContext('2d');
         context.fillStyle = 'rgb(255, 0, 0)';
         context.strokeStyle = 'rgb(0, 0, 0)';
-        let angleinicial = 0;
-        let anglefinal = 360;
-        context.arc(0, 0, 100, angleinicial * Math.PI / 180, anglefinal * Math.PI / 180, false);
-        context.stroke();
-        context.fill()
+
+        let imatge = new Image();
+        imatge.src = "html5.png";
+        //esperem a la càrrega de la imatge
+        imatge.onload = function () {
+            context.drawImage(imatge, 0,100, 50, 50);
+            context.drawImage(imatge, 100,0, 50, 50);
+            context.drawImage(imatge, 100,100, 50, 50);
+        }
+
     }
-    
+
     draw();
-    
+
 
 }
